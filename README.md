@@ -1,6 +1,10 @@
 ###### README.md >> markdown
-##### BSD-3-Clause LICENSE 
-# 🚨 Knowledge 
+##### BSD-3-Clause LICENSE
+
+---
+
+# 🚨 Knowledge
+
 >Tools Security
 - Sécuriser les outils de connaissance, IA, RAG, LLM & plateformes documentaires
 
