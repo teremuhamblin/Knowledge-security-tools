@@ -1,34 +1,23 @@
-Voici le README.md final, entièrement regroupé dans un seul fichier, stylé, avancé, optimisé GitHub, avec liens web / réseaux / ressources sécurité.  
-Tu peux le copier‑coller directement dans ton repo.
+###### README.md >> markdown
+# 🚨 Knowledge 
+>Tools Security
+- Sécuriser les outils de connaissance, IA, RAG, LLM & plateformes documentaires
 
----
-
-`markdown
-
-🚨 Knowledge Tools Security
-
-Sécuriser les outils de connaissance, IA, RAG, LLM & plateformes documentaires
-
-> La connaissance est un actif stratégique.  
-> Ce projet fournit un référentiel complet pour sécuriser les knowledge tools : assistants IA, RAG, moteurs de recherche internes, wikis, dashboards, vector DB, etc.
-
----
-
-🏷️ Badges
-
-!Security
-!AI
-!Compliance
-!Cyber
+```md
+>> La connaissance est un actif stratégique.  
+>> Ce projet fournit un référentiel complet pour sécuriser les knowledge tools
+>> assistants IA, RAG, moteurs de recherche internes, wikis, dashboards, vectoriel
+```
 
 ---
 
 🧭 1. Vision & Objectifs
-
-- Construire un framework de sécurité complet pour les outils de connaissance.  
-- Protéger les données sensibles contre la fuite, l’exfiltration ou la manipulation.  
-- Fournir des checklists, patterns, liens, ressources et bonnes pratiques.  
-- Servir de référence GitHub pour équipes sécurité, data, IA, dev et produit.
+```text
+- Construire un framework de sécurité complet pour les outils de connaissance :
+   - Protéger les données sensibles contre la fuite, l’exfiltration ou la manipulation.  
+   - Fournir des checklists, patterns, liens, ressources et bonnes pratiques.  
+   - Servir de référence GitHub pour équipes sécurité, data, IA, dev et produit.
+```
 
 ---
 
