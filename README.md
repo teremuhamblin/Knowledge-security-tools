@@ -11,7 +11,7 @@
 
 ---
 
-🧭 1. Vision & Objectifs
+## 🧭 1. Vision & Objectifs
 ```text
 - Construire un framework de sécurité complet pour les outils de connaissance :
    - Protéger les données sensibles contre la fuite, l’exfiltration ou la manipulation.  
@@ -21,36 +21,50 @@
 
 ---
 
-📚 2. Ressources & Liens Officiels (Web, Réseaux, Standards)
+## 📚 2. Ressources & Liens Officiels (Web, Réseaux, Standards)
+### 🔐 Sécurité & Standards Internationaux
+- OWASP Top 10 LLM Security
+>https://owasp.org/www-project-top-10-for-large-language-model-applications  
+- NIST AI Risk Management Framework
+>https://www.nist.gov/itl/ai-risk-management-framework  
+- MITRE ATLAS (Attaques IA)
+>https://atlas.mitre.org  
+- CIS Controls
+>https://www.cisecurity.org/controls  
 
-🔐 Sécurité & Standards Internationaux
-- OWASP Top 10 LLM Security — https://owasp.org/www-project-top-10-for-large-language-model-applications  
-- NIST AI Risk Management Framework — https://www.nist.gov/itl/ai-risk-management-framework  
-- MITRE ATLAS (Attaques IA) — https://atlas.mitre.org  
-- CIS Controls — https://www.cisecurity.org/controls  
+### 🤖 IA, LLM, RAG & Knowledge Tools
+- LangChain Security Guidelines
+>https://python.langchain.com/docs/security  
+- LlamaIndex Security
+>https://docs.llamaindex.ai/en/stable/  
+- OpenAI Security Overview
+>https://platform.openai.com/docs/security  
+- Google Gemini Safety
+>https://ai.google/responsibility/safety  
+- Anthropic Claude Safety
+>https://www.anthropic.com/safety  
 
-🤖 IA, LLM, RAG & Knowledge Tools
-- LangChain Security Guidelines — https://python.langchain.com/docs/security  
-- LlamaIndex Security — https://docs.llamaindex.ai/en/stable/  
-- OpenAI Security Overview — https://platform.openai.com/docs/security  
-- Google Gemini Safety — https://ai.google/responsibility/safety  
-- Anthropic Claude Safety — https://www.anthropic.com/safety  
+### 🧪 Outils de tests & scanners
+- Semgrep (SAST)
+>https://semgrep.dev  
+- Trivy (scan containers & IaC)
+>https://aquasecurity.github.io/trivy  
+- ZAP Proxy (OWASP)
+>https://www.zaproxy.org  
+- Snyk
+>https://snyk.io  
 
-🧪 Outils de tests & scanners
-- Semgrep (SAST) — https://semgrep.dev  
-- Trivy (scan containers & IaC) — https://aquasecurity.github.io/trivy  
-- ZAP Proxy (OWASP) — https://www.zaproxy.org  
-- Snyk — https://snyk.io  
-
-🌐 Réseaux sociaux & veille sécurité
-- Twitter/X — @OWASP, @NISTcyber, @MITREattack, @CloudSec  
-- LinkedIn — OWASP Foundation, Cloud Security Alliance  
-- YouTube — BlackHat, DEFCON, Google Cloud Security, Microsoft Security  
+### 🌐 Réseaux sociaux & veille sécurité
+- Twitter/X
+>@OWASP, @NISTcyber, @MITREattack, @CloudSec  
+- LinkedIn
+>OWASP Foundation, Cloud Security Alliance  
+- YouTube
+>BlackHat, DEFCON, Google Cloud Security, Microsoft Security  
 
 ---
 
-🧩 3. Périmètre : Quels outils sont concernés ?
-
+## 🧩 3. Périmètre : Quels outils sont concernés ?
 - Assistants IA internes (chat LLM + documents internes)  
 - Systèmes RAG (vector DB, embeddings, semantic search)  
 - Wikis, KM, dashboards analytiques  
@@ -59,28 +73,30 @@
 
 ---
 
-⚠️ 4. Menaces principales
-
-🎭 Menaces IA / LLM / RAG
+## ⚠️ 4. Menaces principales
+### 🎭 Menaces IA / LLM / RAG
+```text
 - Prompt injection (directe / indirecte)  
 - Exfiltration de données sensibles  
 - Hallucinations crédibles  
 - Cross‑tenant leakage  
 - Poisoning des embeddings ou documents  
-- Contournement des policies internes  
+- Contournement des policies internes
+```
 
-🔥 Menaces classiques
+### 🔥 Menaces classiques
+```text
 - Mauvaise gestion des secrets  
 - Absence de RBAC/ABAC  
 - Logs insuffisants  
 - Manque de segmentation  
 - Accès trop permissifs aux sources documentaires  
+```
 
 ---
 
-🏗️ 5. Architecture de référence sécurisée
-
-🔒 Principes clés
+## 🏗️ 5. Architecture de référence sécurisée
+### 🔒 Principes clés
 - Zero Trust by Design  
 - Defense in Depth  
 - Security as Code  
@@ -88,7 +104,7 @@
 - Filtrage avant RAG (pré‑ACL)  
 - Validation post‑réponse (post‑filter)  
 
-🧱 Architecture logique
+### 🧱 Architecture logique
 1. Client / UI  
 2. API Gateway / WAF  
 3. Service d’orchestration IA  
@@ -99,53 +115,54 @@
 
 ---
 
-🛡️ 6. Contrôles de sécurité essentiels
-
-🔑 Identité & Accès
+## 🛡️ 6. Contrôles de sécurité essentiels
+### 🔑 Identité & Accès
 - SSO obligatoire  
 - RBAC/ABAC  
 - MFA  
 - Context‑aware access  
 
-📄 Données & RAG
+### 📄 Données & RAG
 - Classification (public → secret)  
 - Chiffrement (TLS + at‑rest)  
 - Filtrage par ACL avant retrieval  
 - Masquage / redaction automatique  
 
-🤖 LLM Security
+### 🤖 LLM Security
 - Prompt système non modifiable  
 - Anti‑prompt injection  
 - Content filters (input/output)  
 - Policy engine (OPA, Cedar, Rego)  
 
-📊 Observabilité
+### 📊 Observabilité
 - Logs complets (requêtes, sources, réponses hashées)  
 - Intégration SIEM (Splunk, Sentinel, Elastic)  
 - Alerting sur accès anormal  
 
 ---
 
-🧪 7. Checklist de sécurité (pré‑prod)
+## 🧪 7. Checklist de sécurité (pré‑prod)
 
-- [ ] SSO + RBAC/ABAC activés  
-- [ ] ACL appliquées avant RAG  
-- [ ] Chiffrement complet  
-- [ ] Prompt système verrouillé  
-- [ ] Anti‑prompt injection testé  
-- [ ] Logs complets + SIEM  
-- [ ] Playbook d’incident IA  
+- [x] SSO + RBAC/ABAC activés  
+- [x] ACL appliquées avant RAG  
+- [x] Chiffrement complet  
+- [x] Prompt système verrouillé  
+- [x] Anti‑prompt injection testé  
+- [x] Logs complets + SIEM  
+- [x] Playbook d’incident IA  
 
 ---
 
-🧱 8. Modèle de politique interne (exemple)
+## 🧱 8. Modèle de politique interne (exemple)
 
 `
 Usage autorisé :
 - Recherche documentaire interne
 - Synthèse de documents internes
 - Assistance rédactionnelle contrôlée
+`
 
+`
 Usage interdit :
 - Injection de données personnelles non nécessaires
 - Contournement des politiques internes
@@ -154,57 +171,53 @@ Usage interdit :
 
 ---
 
-🗺️ 9. Roadmap d’évolution
-
-- v0.1 — README complet (cette version)  
-- v0.2 — Patterns d’architecture + exemples RAG  
-- v0.3 — Scripts de tests de prompt injection  
-- v1.0 — Framework complet + CI/CD sécurité  
+## 🗺️ 9. Roadmap d’évolution
+- README complet
+   - (cette version)
+- — Patterns d’architecture + exemples RAG
+- — Scripts de tests de prompt injection
+- — Framework complet
+   - + CI/CD sécurité  
 
 ---
 
-🌐 10. Ressources complémentaires (liens avancés)
-
-🔍 Recherche & veille
+## 🌐 10. Ressources complémentaires 
+>(liens avancés)
+### 🔍 Recherche & veille
 - https://krebsonsecurity.com  
 - https://www.darkreading.com  
 - https://www.bleepingcomputer.com  
 
-☁️ Cloud Security
-- AWS Security Hub — https://aws.amazon.com/security  
-- Azure Security — https://learn.microsoft.com/azure/security  
-- Google Cloud Security — https://cloud.google.com/security  
+### ☁️ Cloud Security
+>AWS Security Hub
+- — https://aws.amazon.com/security  
+>Azure Security
+- — https://learn.microsoft.com/azure/security  
+>Google Cloud Security
+- — https://cloud.google.com/security  
 
-📘 Documentation IA
+### 📘 Documentation IA
 - HuggingFace Security — https://huggingface.co/docs  
 - Microsoft Responsible AI — https://www.microsoft.com/ai/responsible-ai  
 
 ---
 
-🧨 11. Partage & viralité réseaux sociaux
-
-🔗 Hashtags recommandés
+## 🧨 11. Partage & viralité réseaux sociaux
+### 🔗 Hashtags recommandés
+```md
 #CyberSecurity #AIsecurity #LLMSecurity #RAG #KnowledgeTools #DevSecOps #ZeroTrust #GitHubSecurity
+```
 
-🧵 Threads Twitter/X possibles
+### 🧵 Threads Twitter/X possibles
 - “Les 10 risques majeurs des LLM en entreprise”  
 - “Comment sécuriser un RAG en 2026”  
 - “Pourquoi Zero Trust est obligatoire pour les knowledge tools”  
 
 ---
 
-🏁 Conclusion
-
+### 🏁 Conclusion
+```md
 Ce README est conçu pour être le meilleur point d’entrée GitHub sur la sécurité des knowledge tools : complet, stylé, documenté, avec liens, ressources, architecture et checklist.
+```
 
----
-`
-
----
-
-Si tu veux, je peux aussi te générer :  
-🔥 un logo cyber pour le projet  
-🔥 un thème GitHub Pages  
-🔥 un pack .github complet (issues, PR templates, workflows)  
-
-Tu veux lequel en premier.
+--- 🔥🔥🔥 ---
