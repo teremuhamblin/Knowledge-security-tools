@@ -221,4 +221,6 @@ Usage interdit :
 Ce README est conçu pour être le meilleur point d’entrée GitHub sur la sécurité des knowledge tools : complet, stylé, documenté, avec liens, ressources, architecture et checklist.
 ```
 
+<p align="center">
 --- 🔥🔥🔥 ---
+</p>
