@@ -12,9 +12,9 @@ github: teremuhamblin
 # ------------------------------------------------------------
 #  Plateformes alternatives (désactivées mais prêtes)
 # ------------------------------------------------------------
-# ko_fi: teremuhamblin
-# liberapay: teremuhamblin
-# patreon: teremuhamblin
+ko_fi: teremuhamblin
+liberapay: teremuhamblin
+patreon: teremuhamblin
 
 
 # ------------------------------------------------------------
@@ -31,13 +31,13 @@ custom:
   # - https://2roam.example.com
 
   # Réseaux sociaux / liens pro (optionnels)
-  # - https://linkedin.com/in/teremu
-  # - https://twitter.com/teremu
+  https://linkedin.com/in/teremu
+  https://twitter.com/teremu
 
 
 # ------------------------------------------------------------
 #  Signature
 # ------------------------------------------------------------
-#  Merci de soutenir mes projets open‑source :
-#  sécurité, cyber‑physique, CI/CD, documentation avancée.
+Merci de soutenir mes projets open‑source :
+sécurité, cyber‑physique, CI/CD, documentation avancée.
 # ============================================================
