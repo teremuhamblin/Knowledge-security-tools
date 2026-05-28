@@ -13,9 +13,8 @@
 
 ---
 
-📁 Structure du dossier
-
-`
+### 📁 Structure du dossier
+```text
 arsenal/
 │
 ├── scanners/        # Outils d'analyse, détection, audit
@@ -23,34 +22,30 @@ arsenal/
 ├── exploits/        # Scripts d'exploitation (contrôlés, éducatifs)
 ├── utils/           # Fonctions utilitaires et helpers
 └── README.md        # Documentation du dossier
-`
-
+```
 > La structure peut évoluer selon les besoins du projet.
 
 ---
 
-🛠️ Contenu typique
+### 🛠️ Contenu typique
+##### 🔍 Scanners
+- Outils permettant :
+   - l’analyse de configuration  
+   - la détection de vulnérabilités  
+   - le scan réseau ou système  
+##### 📡 Collectors
+- Modules dédiés à :
+   - la récupération d’informations système  
+   - l’extraction de métadonnées  
+   - la collecte OSINT  
+##### ⚡ Exploits (usage contrôlé)
+- Scripts éducatifs destinés à :
+   - démontrer des failles  
+   - tester des environnements isolés  
+   - comprendre des vecteurs d’attaque  
 
-🔍 Scanners
-Outils permettant :
-- l’analyse de configuration  
-- la détection de vulnérabilités  
-- le scan réseau ou système  
-
-📡 Collectors
-Modules dédiés à :
-- la récupération d’informations système  
-- l’extraction de métadonnées  
-- la collecte OSINT  
-
-⚡ Exploits (usage contrôlé)
-Scripts éducatifs destinés à :
-- démontrer des failles  
-- tester des environnements isolés  
-- comprendre des vecteurs d’attaque  
-
-🧩 Utils
-Fonctions génériques :
+### 🧩 Utils
+>Fonctions génériques :
 - parsing  
 - logs  
 - helpers shell  
@@ -58,39 +53,35 @@ Fonctions génériques :
 
 ---
 
-📦 Installation / Utilisation
-
-`bash
+### 📦 Installation / Utilisation
+```bash
 cd arsenal/
 chmod +x /.sh
 ./scanners/scan-example.sh
-`
-
+```
 > Certains outils peuvent nécessiter des dépendances spécifiques (bash, python, curl, etc.).
 
 ---
 
-🛡️ Avertissement
-Les outils contenus dans arsenal/ sont destinés uniquement à un usage :
-- éducatif  
-- légal  
-- dans des environnements autorisés  
-
-Toute utilisation non conforme est strictement interdite.
-
----
-
-🤝 Contributions
-Les contributions sont les bienvenues.  
-Merci de suivre les règles définies dans :
-
-- CONTRIBUTING.md
-- CODEOFCONDUCT.md
+### 🛡️ Avertissement
+- Les outils contenus dans arsenal/ sont destinés uniquement à un usage :
+   - éducatif  
+   - légal  
+   - dans des environnements autorisés
+   - toute utilisation non conforme est strictement interdite.
 
 ---
 
-📜 Licence
-Ce dossier suit la licence du projet principal Knowledge Security Tools.
-`
+### 🤝 Contributions
+>Les contributions sont les bienvenues.
+- Merci de suivre les règles définies dans :
+   - CONTRIBUTING.md
+   - CODEOFCONDUCT.md
+
+---
+
+### 📜 Licence
+>Ce dossier suit la licence du projet principal Knowledge Security Tools.
+
 
 ---
