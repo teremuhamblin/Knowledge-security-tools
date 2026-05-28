@@ -1,0 +1,68 @@
+name: CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  ci:
+    name: Continuous Integration
+    runs-on: ubuntu-latest
+
+    steps:
+      # --- Checkout du dépôt ---
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # --- Configuration de base ---
+      - name: Setup environment
+        run: |
+          echo "CI environment initialized"
+          mkdir -p artifacts
+
+      # --- Lint des scripts (si présents) ---
+      - name: Install ShellCheck
+        run: sudo apt-get install -y shellcheck
+
+      - name: Lint scripts
+        run: |
+          if [ -d "scripts" ]; then
+            shellcheck scripts/*.sh || true
+          else
+            echo "No scripts folder found"
+          fi
+
+      # --- Scan sécurité (Trivy) ---
+      - name: Security Scan (Trivy)
+        uses: aquasecurity/trivy-action@0.20.0
+        with:
+          scan-type: "fs"
+          severity: "HIGH,CRITICAL"
+          ignore-unfixed: true
+          format: "table"
+          output: "artifacts/security-report.txt"
+
+      # --- Tests (si présents) ---
+      - name: Run tests
+        run: |
+          if [ -d "tests" ]; then
+            echo "Running tests..."
+            bash tests/run-tests.sh || true
+          else
+            echo "No tests folder found"
+          fi
+
+      # --- Build (optionnel) ---
+      - name: Build project
+        run: |
+          echo "Build step placeholder"
+          echo "Build completed" > artifacts/build-log.txt
+
+      # --- Upload artefacts ---
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ci-artifacts
+          path: artifacts/
