@@ -12,9 +12,9 @@ github: teremuhamblin
 # ------------------------------------------------------------
 #  Plateformes alternatives (désactivées mais prêtes)
 # ------------------------------------------------------------
-ko_fi: teremuhamblin
-liberapay: teremuhamblin
-patreon: teremuhamblin
+#ko_fi: teremuhamblin
+#liberapay: teremuhamblin
+#patreon: teremuhamblin
 
 
 # ------------------------------------------------------------
@@ -22,7 +22,7 @@ patreon: teremuhamblin
 # ------------------------------------------------------------
 custom:
   # Profil GitHub principal
-  - https://github.com/teremuhamblin
+  #- https://github.com/teremuhamblin
 
   # Page YnFOR (activer si tu veux l’utiliser)
   # - https://ynfor.example.com
@@ -31,13 +31,13 @@ custom:
   # - https://2roam.example.com
 
   # Réseaux sociaux / liens pro (optionnels)
-  https://linkedin.com/in/teremu
-  https://twitter.com/teremu
+  #https://linkedin.com/in/teremu
+  #https://twitter.com/teremu
 
 
 # ------------------------------------------------------------
 #  Signature
 # ------------------------------------------------------------
-Merci de soutenir mes projets open‑source :
-sécurité, cyber‑physique, CI/CD, documentation avancée.
+#Merci de soutenir mes projets open‑source :
+#sécurité, cyber‑physique, CI/CD, documentation avancée.
 # ============================================================
