@@ -1,0 +1,10 @@
+# Code Owners
+
+# Le mainteneur principal du projet
+* @teremuhamblin
+
+# Dossiers critiques
+.github/ @teremuhamblin
+tools/   @teremuhamblin
+scripts/ @teremuhamblin
+templates/ @teremuhamblin
