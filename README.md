@@ -14,6 +14,15 @@
 >> assistants IA, RAG, moteurs de recherche internes, wikis, dashboards, vectoriel
 ```
 
+### 🛠️ Dossier tools/
+>Ce dossier regroupe les outils internes du projet, dont :
+```md
+- **kst-audit.sh** — audit système rapide avec scoring et rapport Markdown
+- **scripts/** — scripts d’analyse, d’automatisation et de sécurité
+- **templates/** — modèles réutilisables pour scripts et rapports
+```
+>Ces outils forment la base technique du framework *Knowledge Security Tools*.
+
 ---
 
 ## 🧭 1. Vision & Objectifs
