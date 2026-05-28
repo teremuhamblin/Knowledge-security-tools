@@ -14,6 +14,11 @@
 >> assistants IA, RAG, moteurs de recherche internes, wikis, dashboards, vectoriel
 ```
 
+### 🔧 Dossier Arsenal/
+- Contient les outils principaux du projet :
+   - scanners, modules de collecte, utilitaires et scripts d’analyse
+   - boîte à outils centrale de *Knowledge Security Tools*, dédiée aux opérations d’audit et de sécurité.
+
 ### 🛠️ Dossier Tools/
 >Ce dossier regroupe les outils internes du projet, dont :
 ```md
