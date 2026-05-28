@@ -14,7 +14,7 @@
 >> assistants IA, RAG, moteurs de recherche internes, wikis, dashboards, vectoriel
 ```
 
-### 🛠️ Dossier tools/
+### 🛠️ Dossier Tools/
 >Ce dossier regroupe les outils internes du projet, dont :
 ```md
 - **kst-audit.sh** — audit système rapide avec scoring et rapport Markdown
