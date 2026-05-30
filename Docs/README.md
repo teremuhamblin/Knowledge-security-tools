@@ -1,4 +1,5 @@
-# 📚 Documentation — Knowledge Security Tools
+# 📚 Documentation
+- Knowledge Security Tools
 
 Bienvenue dans le dossier **Docs/** du projet **Knowledge Security Tools**.  
 Ce répertoire contient l’ensemble de la documentation technique, fonctionnelle et opérationnelle du framework.
@@ -24,7 +25,7 @@ Guide d’installation complet du projet, incluant :
 - configuration de l’environnement  
 - exécution des scripts principaux  
 
-### 🏗️ `architecture.md`
+### 🏗️ `structure.md`
 Documentation détaillée de l’architecture du projet :
 - organisation des dossiers  
 - logique interne  
