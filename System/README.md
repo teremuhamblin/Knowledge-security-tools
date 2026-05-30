@@ -1,6 +1,6 @@
 ###### README.md >> markdown 
 ```md
->pour le script BASH `system-setup.sh`
+>Pour le script BASH `system-setup.sh`
    - Elle est structurée comme une documentation adaptée à ton projet
    - Script Bash complet, modulaire et multi‑plateforme, conçu pour provisionner automatiquement un environnement d’ingénierie système professionnel.
 >Il permet d’installer en une seule commande :
