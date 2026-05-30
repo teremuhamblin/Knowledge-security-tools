@@ -1,0 +1,16 @@
+blank_issues_enabled: false
+
+contact_links: []
+
+issue_templates:
+  - name: "🐞 Bug Report"
+    description: "Signaler un bug dans Knowledge Security Tools"
+    path: "bug_report.md"
+
+  - name: "🚀 Feature Request"
+    description: "Proposer une nouvelle fonctionnalité"
+    path: "feature_request.md"
+
+  - name: "📌 Task"
+    description: "Créer une tâche technique ou organisationnelle"
+    path: "task.md"
