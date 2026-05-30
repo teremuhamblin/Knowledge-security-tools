@@ -1,0 +1,12 @@
+pull_request_templates:
+  - name: "🚀 Feature PR"
+    description: "Pull Request pour une nouvelle fonctionnalité"
+    path: "pr_feature.md"
+
+  - name: "🐞 Fix PR"
+    description: "Pull Request pour corriger un bug"
+    path: "pr_fix.md"
+
+  - name: "📌 Task PR"
+    description: "Pull Request pour une tâche technique"
+    path: "pr_task.md"
