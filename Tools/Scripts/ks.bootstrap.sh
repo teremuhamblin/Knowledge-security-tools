@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 # file: ks_bootstrap.sh
 # Usage: sudo bash ks_bootstrap.sh
+# Script Bash pour mise à jour + installation des outils
+# Ce script :
+# - met à jour les dépôts,
+# - installe les outils de base pour ton projet knowledge-security-tools,
+# - prépare un venv Python optionnel.
 
 set -euo pipefail
 
