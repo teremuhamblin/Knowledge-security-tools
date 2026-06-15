@@ -1,4 +1,5 @@
 ###### README.md >> markdown
+[![.github/workflows/main.yml](https://github.com/teremuhamblin/Knowledge-security-tools/actions/workflows/main.yml/badge.svg)](https://github.com/teremuhamblin/Knowledge-security-tools/actions/workflows/main.yml)
 ##### BSD-3-Clause LICENSE
 
 ---
